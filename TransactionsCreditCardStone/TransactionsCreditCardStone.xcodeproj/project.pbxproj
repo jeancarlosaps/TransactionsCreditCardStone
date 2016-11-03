@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					D94C41071DB1980B001131B6 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 22GD85QNU8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22GD85QNU8;
 				INFOPLIST_FILE = TransactionsCreditCardStone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeancarlosit.TransactionsCreditCardStone;
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22GD85QNU8;
 				INFOPLIST_FILE = TransactionsCreditCardStone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeancarlosit.TransactionsCreditCardStone;

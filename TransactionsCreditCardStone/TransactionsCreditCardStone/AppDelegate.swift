@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barStyle = UIBarStyle.default
         navigationBarAppearance.tintColor = UIColor.white
-        navigationBarAppearance.barTintColor = UIColor.orange
+        navigationBarAppearance.barTintColor = UIColor.green
         navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         UIBarButtonItem.appearance().tintColor = UIColor.white
         
