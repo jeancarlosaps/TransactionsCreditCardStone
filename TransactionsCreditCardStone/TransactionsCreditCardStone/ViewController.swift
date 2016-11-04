@@ -32,6 +32,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.textFieldName.placeholder = "Digite o nome igual ao cartão"
         self.textFieldCVV.placeholder = "Digite o código de segurança"
         
+        self.textFieldCVV.keyboardType = UIKeyboardType.numberPad
+        
         self.textFieldName.delegate = self
         self.textFieldCVV.delegate = self
         
@@ -68,6 +70,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.becomeFirstResponder()
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if (textField == self.textFieldName) {
+            
+            self.textFieldCVV.becomeFirstResponder()
+            
+        }
+        
+        return true
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.textFieldName.resignFirstResponder()
+        self.textFieldCVV.resignFirstResponder()
+    }
+    
     //MARK: Actions
 
     @IBAction func btnConfirmar(_ sender: UIButton) {
@@ -79,6 +99,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let actionOk = UIAlertAction(title: "OK", style: .default) { (acao) in
                 print("Confirmou")
                 self.presentSecondAlert()
+                self.textFieldName.text = nil
+                self.textFieldCVV.text = nil
             }
             
             let actionCancelar = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.cancel, handler: { (acao) in

@@ -12,6 +12,7 @@
 		D94C41111DB1980B001131B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94C410F1DB1980B001131B6 /* Main.storyboard */; };
 		D94C41131DB1980B001131B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94C41121DB1980B001131B6 /* Assets.xcassets */; };
 		D94C41161DB1980B001131B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94C41141DB1980B001131B6 /* LaunchScreen.storyboard */; };
+		D9ABFAD21DCBBBE6001363CB /* CredCardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABFAD11DCBBBE6001363CB /* CredCardUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D94C41121DB1980B001131B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94C41151DB1980B001131B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94C41171DB1980B001131B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9ABFAD11DCBBBE6001363CB /* CredCardUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredCardUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		D94C410A1DB1980B001131B6 /* TransactionsCreditCardStone */ = {
 			isa = PBXGroup;
 			children = (
+				D9ABFAD11DCBBBE6001363CB /* CredCardUser.swift */,
 				D94C410B1DB1980B001131B6 /* AppDelegate.swift */,
 				D94C410D1DB1980B001131B6 /* ViewController.swift */,
 				D94C410F1DB1980B001131B6 /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D94C410E1DB1980B001131B6 /* ViewController.swift in Sources */,
+				D9ABFAD21DCBBBE6001363CB /* CredCardUser.swift in Sources */,
 				D94C410C1DB1980B001131B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				D94C411C1DB1980B001131B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
