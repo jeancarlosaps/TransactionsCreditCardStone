@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A24E430DC7F8B7A742A8083 /* Pods_TransactionsCreditCardStone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7DDE18C2DF21224E592309 /* Pods_TransactionsCreditCardStone.framework */; };
 		D94C410C1DB1980B001131B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94C410B1DB1980B001131B6 /* AppDelegate.swift */; };
 		D94C410E1DB1980B001131B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94C410D1DB1980B001131B6 /* ViewController.swift */; };
 		D94C41111DB1980B001131B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94C410F1DB1980B001131B6 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F7DDE18C2DF21224E592309 /* Pods_TransactionsCreditCardStone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransactionsCreditCardStone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A60D29D6360D042EF453D7A /* Pods-TransactionsCreditCardStone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionsCreditCardStone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionsCreditCardStone/Pods-TransactionsCreditCardStone.debug.xcconfig"; sourceTree = "<group>"; };
+		4EF9AA99508E709D49DEB061 /* Pods-TransactionsCreditCardStone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionsCreditCardStone.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionsCreditCardStone/Pods-TransactionsCreditCardStone.release.xcconfig"; sourceTree = "<group>"; };
 		D94C41081DB1980B001131B6 /* TransactionsCreditCardStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransactionsCreditCardStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94C410B1DB1980B001131B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D94C410D1DB1980B001131B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A24E430DC7F8B7A742A8083 /* Pods_TransactionsCreditCardStone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4295EC137AE30579BAB822AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A60D29D6360D042EF453D7A /* Pods-TransactionsCreditCardStone.debug.xcconfig */,
+				4EF9AA99508E709D49DEB061 /* Pods-TransactionsCreditCardStone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84143C04E65D09CF2DD6C8A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F7DDE18C2DF21224E592309 /* Pods_TransactionsCreditCardStone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D94C40FF1DB1980B001131B6 = {
 			isa = PBXGroup;
 			children = (
 				D94C410A1DB1980B001131B6 /* TransactionsCreditCardStone */,
 				D94C41091DB1980B001131B6 /* Products */,
+				4295EC137AE30579BAB822AF /* Pods */,
+				84143C04E65D09CF2DD6C8A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D94C411A1DB1980B001131B6 /* Build configuration list for PBXNativeTarget "TransactionsCreditCardStone" */;
 			buildPhases = (
+				8E8470B3CF080AF5489CF5D0 /* [CP] Check Pods Manifest.lock */,
 				D94C41041DB1980B001131B6 /* Sources */,
 				D94C41051DB1980B001131B6 /* Frameworks */,
 				D94C41061DB1980B001131B6 /* Resources */,
+				96065575EE2AFF209E30F44E /* [CP] Embed Pods Frameworks */,
+				70FF86189AA4978E2A3C4FA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +127,7 @@
 					D94C41071DB1980B001131B6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 22GD85QNU8;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70FF86189AA4978E2A3C4FA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransactionsCreditCardStone/Pods-TransactionsCreditCardStone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E8470B3CF080AF5489CF5D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96065575EE2AFF209E30F44E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransactionsCreditCardStone/Pods-TransactionsCreditCardStone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D94C41041DB1980B001131B6 /* Sources */ = {
@@ -186,6 +262,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -236,6 +313,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,7 +341,9 @@
 		};
 		D94C411B1DB1980B001131B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A60D29D6360D042EF453D7A /* Pods-TransactionsCreditCardStone.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 22GD85QNU8;
 				INFOPLIST_FILE = TransactionsCreditCardStone/Info.plist;
@@ -276,7 +356,9 @@
 		};
 		D94C411C1DB1980B001131B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF9AA99508E709D49DEB061 /* Pods-TransactionsCreditCardStone.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 22GD85QNU8;
 				INFOPLIST_FILE = TransactionsCreditCardStone/Info.plist;

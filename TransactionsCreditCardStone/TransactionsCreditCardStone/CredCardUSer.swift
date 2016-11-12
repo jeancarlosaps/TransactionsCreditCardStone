@@ -16,8 +16,13 @@ struct CredCardUser {
     let mesVencimento:Int
     let bandeira:String
     let cvv:Int
-    let valorTransacao:Double
+    let valorTransacao:String
     
+}
+
+protocol JSONDecodable {
+    
+    init?(json: [String: Any]) throws
 }
 
 enum SerializationError:Error {
@@ -26,7 +31,7 @@ enum SerializationError:Error {
 
 extension CredCardUser {
     
-    init?(json:[String:Any]) throws {
+    public init?(json:[String:Any]) throws {
         
         guard let nomePortador = json["nomePortador"] as? String else {
             throw SerializationError.missing("nomePortador")
@@ -52,7 +57,7 @@ extension CredCardUser {
             throw SerializationError.missing("cvv")
         }
         
-        guard let valorTransacao = json["valorTransacao"] as? Double else {
+        guard let valorTransacao = json["valorTransacao"] as? String else {
             throw SerializationError.missing("valorTransacao")
         }
         

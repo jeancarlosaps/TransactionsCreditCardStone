@@ -1,0 +1,6 @@
+framework module Pods_TransactionsCreditCardStone {
+  umbrella header "Pods-TransactionsCreditCardStone-umbrella.h"
+
+  export *
+  module * { export * }
+}

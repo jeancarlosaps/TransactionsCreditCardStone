@@ -21,6 +21,8 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para finalizar sua compra, confirme os dados abaixo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMk-ly-eRD">
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="7H4-ag-dox"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="8jP-pK-wcA"/>
                                     <constraint firstAttribute="height" constant="30" id="QRi-eh-II8"/>
                                     <constraint firstAttribute="width" constant="305" id="QcV-fF-QWY"/>
                                 </constraints>
@@ -63,7 +65,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fs-yQ-MtV">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fs-yQ-MtV">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="W25-2b-xp4"/>
                                     <constraint firstAttribute="width" constant="69" id="YUa-QM-x8I"/>
@@ -103,10 +105,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnConfirmarIB" destination="7fs-yQ-MtV" id="Mj4-LS-Dtm"/>
                         <outlet property="textFieldCVV" destination="jpL-vr-UQo" id="mXS-Qs-4Jl"/>
                         <outlet property="textFieldName" destination="4Mk-00-1bT" id="2pX-8Y-5LY"/>
-                        <outlet property="txfCVV" destination="jpL-vr-UQo" id="C9E-Wy-UMG"/>
-                        <outlet property="txfName" destination="4Mk-00-1bT" id="V1V-No-21u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
